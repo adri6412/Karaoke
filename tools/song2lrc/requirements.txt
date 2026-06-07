@@ -1,0 +1,13 @@
+# Dipendenze di song2lrc (oltre a torch+CUDA gia' presenti nel sistema).
+#
+# NB: torch / torchaudio NON sono elencati apposta: usa quelli gia' installati
+# (torch 2.6.0+cu124). Se manca torchaudio (serve a Demucs):
+#     pip install torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+
+faster-whisper>=1.1.0
+demucs>=4.0.1
+
+# faster-whisper su GPU usa CTranslate2, che richiede le librerie cuDNN 9 / cuBLAS
+# per CUDA 12. Se all'avvio vedi "Could not locate cudnnXXX" installa anche:
+#     pip install nvidia-cudnn-cu12 nvidia-cublas-cu12
+# (su molte installazioni torch cu124 sono gia' presenti).

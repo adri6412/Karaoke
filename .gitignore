@@ -1,0 +1,29 @@
+.gradle/
+build/
+*/build/
+local.properties
+.idea/
+*.iml
+.DS_Store
+captures/
+.kotlin/
+
+# Output compilato dei moduli (Eclipse/IntelliJ)
+bin/
+
+# Artefatti di build / release
+*.apk
+*/release/
+
+# Cache Python del tool song2lrc
+__pycache__/
+*.pyc
+
+# Media di esempio (audio protetto da copyright, non distribuibile)
+*.krz
+*.lrc
+*.mp3
+*.wav
+*.mid
+*.kar
+*.mp4
