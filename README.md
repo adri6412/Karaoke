@@ -1,5 +1,10 @@
 # Karaoke
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Kotlin](https://img.shields.io/badge/Kotlin-Multiplatform-7F52FF.svg?logo=kotlin&logoColor=white)](https://kotlinlang.org)
+[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20Desktop-3DDC84.svg?logo=android&logoColor=white)](#moduli)
+[![UI](https://img.shields.io/badge/UI-Jetpack%20Compose-4285F4.svg)](https://developer.android.com/jetpack/compose)
+
 Progetto **Kotlin Multiplatform** per creare e riprodurre karaoke con testo
 sincronizzato. È composto da un'**app Android** (player), un **tool desktop di
 authoring** (per temporizzare il testo ed esportare i brani) e un modulo
@@ -9,6 +14,16 @@ Python (`song2lrc`) che genera testi sincronizzati con l'AI.
 ```
 audio + testo ──▶ desktopAuthor ──▶ brano.krz ──▶ app Android ──▶ karaoke
 ```
+
+## Screenshot
+
+| App Android (player) | desktopAuthor (authoring) |
+|---|---|
+| ![Player Android](docs/screenshots/android-player.png) | ![desktopAuthor](docs/screenshots/desktop-author.png) |
+
+> Le immagini vanno messe in [`docs/screenshots/`](docs/screenshots/). Finché non
+> ci sono, GitHub mostra un'icona di immagine mancante: basta aggiungere i file
+> `android-player.png` e `desktop-author.png` (o aggiornare i percorsi qui sopra).
 
 ## Moduli
 
